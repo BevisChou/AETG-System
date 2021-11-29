@@ -269,7 +269,7 @@ void emit_combination(
     }
     else
     {
-        for(uint32_t i = 0; i < candidates[current_index].size(); i++)
+        for(uint32_t i = 0; i < candidates[type_sequence[current_index]].size(); i++)
         {
             selection_array[current_index] = i;
             emit_combination(result_set, selection_array, current_index + 1, type_sequence, candidates);
