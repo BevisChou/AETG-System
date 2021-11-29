@@ -37,11 +37,7 @@ std::ostream& operator<<(std::ostream& out, const TestCase& test_case)
 {
     for(uint32_t i = 0; i < test_case.values_.size(); i++)
     {
-        out << test_case.values_[i];
-        if(i < test_case.values_.size() - 1)
-        {
-            out << " ";
-        }
+        out << test_case.values_[i] << " ";
     }
-    return out << ", " << test_case.num_of_new_combinations_;
+    return out << test_case.num_of_new_combinations_;
 }
